@@ -17,24 +17,13 @@ Convertisseur 12 V -> 5 V
       |                   |
    ESP8266             Relais / PCF8574
 
-# Documentation de câblage
 
-## Vue d'ensemble
-
-```text
-+12 V véhicule
-      |
-    Fusible
-      |
-Arrêt d'urgence NC
-      |
-Protection automobile
-      |
-Convertisseur 12 V -> 5 V
-      |
-      +-------------------+
-      |                   |
-   ESP8266             Relais / PCF8574
+| ESP8266 | PCF8574 |
+| --- | --- |
+| D2 / SDA | SDA |
+| D1 / SCL | SCL |
+| GND | GND |
+| Alimentation compatible | VCC |
 
 
 D7 ---- Résistance (peut-être nécessaire) ---- Bouton momentané ---- GND
