@@ -492,6 +492,27 @@ Aucune application mobile n'est requise.
 | `Continue` | Vague répétée jusqu'à l'arrêt |
 | `System Stop` | Coupe immédiatement toutes les commandes de relais |
 
+## 🎬 Démonstration
+
+<p align="center">
+  <a href="https://www.instagram.com/reel/DbiLK4aoaiP/">
+    <img
+      src="docs/screenshots/instagram-demo.jpg"
+      alt="Voir la démonstration du contrôleur de phares MIATA_WINK"
+      width="420"
+    >
+  </a>
+</p>
+
+<p align="center">
+  <strong>
+    <a href="https://www.instagram.com/reel/DbiLK4aoaiP/">
+      ▶ Voir la vidéo sur Instagram
+    </a>
+  </strong>
+</p>
+
+
 ### Différence entre `System Stop` et l'arrêt d'urgence
 
 #### `System Stop`
