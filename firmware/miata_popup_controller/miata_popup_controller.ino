@@ -1,3 +1,27 @@
+/*
+ * MIATA_WINK
+ * Contrôleur de phares escamotables pour Mazda MX-5 NA
+ *
+ * Matériel :
+ * - ESP8266 NodeMCU / Wemos D1 mini
+ * - PCF8574
+ * - 4 relais actifs à LOW
+ * - bouton physique sur D7
+ *
+ * Les moteurs de phares de la MX-5 NA disposent de fins de course internes.
+ * Le firmware limite malgré tout la durée d'activation des relais.
+ *
+ * IMPORTANT :
+ * Un arrêt d'urgence matériel à contact normalement fermé doit couper le
+ * +12 V avant le convertisseur DC-DC. Cet arrêt ne doit pas dépendre du
+ * firmware ni de l'ESP8266.
+ *
+ * Ce projet n'est pas un équipement automobile homologué.
+ * Utilisation sous la responsabilité de l'installateur.
+ *
+ * Licence : MIT
+ */
+
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <DNSServer.h>
