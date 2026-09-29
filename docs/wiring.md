@@ -18,6 +18,8 @@ Convertisseur 12 V -> 5 V
    ESP8266             Relais / PCF8574
 
 
+ESP8266 vers PCF8574
+
 | ESP8266 | PCF8574 |
 | --- | --- |
 | D2 / SDA | SDA |
@@ -26,8 +28,12 @@ Convertisseur 12 V -> 5 V
 | Alimentation compatible | VCC |
 
 
+Bouton physique
+
 D7 ---- Résistance (peut-être nécessaire) ---- Bouton momentané ---- GND
 
+
+Relais
 
 | Sortie PCF8574 | Entrée relais |
 | --- | --- |
@@ -36,6 +42,8 @@ D7 ---- Résistance (peut-être nécessaire) ---- Bouton momentané ---- GND
 | P2 | Montée droite |
 | P3 | Descente droite |
 
+
+Arrêt d'urgence
 
 +12 V véhicule
       |
