@@ -9,6 +9,48 @@ Le système repose sur un ESP8266, un expandeur I²C PCF8574, quatre relais acti
 >
 > Le montage doit comporter un fusible, une coupure d’urgence matérielle et un étage d’alimentation adapté à l’environnement automobile.
 
+## Schéma de câblage de référence
+
+Le câblage de la partie automobile de ce projet est basé sur le guide Instructables suivant :
+
+[Popup headlight wink with Arduino and relay board](https://www.instructables.com/Popup-headlight-wink-with-arduino-and-relay-board-/)
+
+Ce guide présente le principe de raccordement des relais au circuit des phares escamotables de la Mazda MX-5 NA.
+
+### Affichage des annotations
+
+Certaines informations de câblage sont inscrites sous forme de notes interactives directement sur les photos du guide.
+
+Pour les consulter :
+
+1. ouvrir le lien Instructables ;
+2. cliquer sur une photo pour l’afficher en grand ;
+3. cliquer sur **View Notes** ou **Voir les notes** en haut de l’image ;
+4. consulter les repères et annotations affichés sur la photo.
+
+Ces annotations contiennent des informations complémentaires qui ne sont pas toujours visibles dans le texte principal de l’article.
+
+> [!IMPORTANT]
+> Ce projet reprend le principe de câblage présenté dans le guide, mais adapte la partie commande à un ESP8266 et à un PCF8574.
+>
+> Le guide d’origine peut utiliser une carte Arduino, un module de relais ou un ordre de broches différent. Les numéros de broches et le mapping des relais indiqués dans ce dépôt restent donc prioritaires pour la partie électronique du contrôleur.
+
+### Correspondance utilisée dans ce projet
+
+| Fonction | Sortie PCF8574 |
+|---|---|
+| Montée du phare gauche | `P0` |
+| Descente du phare gauche | `P1` |
+| Montée du phare droit | `P2` |
+| Descente du phare droit | `P3` |
+
+Les quatre relais sont actifs à l’état bas :
+
+```cpp
+#define RELAY_ON  LOW
+#define RELAY_OFF HIGH
+
+
 ## Matériel principal
 
 | Quantité | Composant | Fonction |
