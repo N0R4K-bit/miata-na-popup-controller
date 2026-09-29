@@ -1,0 +1,62 @@
+# Fichiers de compilation Arduino / ESP8266
+*.bin
+*.hex
+*.elf
+*.eep
+*.map
+*.lst
+*.sym
+
+# Répertoires de compilation
+build/
+.build/
+arduino_build_*/
+arduino_cache_*/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Arduino IDE
+*.ino.globals.h
+*.ino.cpp
+sketch.json
+
+# Fichiers temporaires et sauvegardes
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+*.orig
+
+# Journaux
+*.log
+
+# Systèmes d'exploitation
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Environnements de développement
+.idea/
+
+# Informations sensibles locales
+secrets.h
+config.local.h
+credentials.h
+.env
+.env.*
+
+# Conserver les exemples de configuration
+!*.example
+!*.example.h
