@@ -1086,4 +1086,15 @@ Projet conçu pour les amateurs de Mazda MX-5 NA et de phares escamotables.
 
 `MIATA_WINK` n'est pas affilié à Mazda Motor Corporation.
 
+```markdown
+## Référence de câblage
+
+Le principe de câblage des relais sur le circuit des phares est basé sur le guide :
+
+- [Popup headlight wink with Arduino and relay board — Instructables](https://www.instructables.com/Popup-headlight-wink-with-arduino-and-relay-board-/)
+
+Pour afficher les détails ajoutés aux illustrations, cliquez sur une photo afin de l’agrandir, puis sélectionnez **View Notes** ou **Voir les notes** en haut de l’image.
+
+> Le contrôleur présenté dans ce dépôt utilise un ESP8266 et un PCF8574. Le mapping des broches diffère donc de celui du montage d’origine.
+
 Mazda, MX-5 et Miata sont des marques appartenant à leurs propriétaires respectifs.
